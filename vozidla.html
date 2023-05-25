@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vozidla.css">
+    <script src="https://kit.fontawesome.com/bb8769d3b3.js" crossorigin="anonymous"></script>
+    <title>Rentello.sk/naše vozidlá</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="rentello.html"><img src="obrázky/logo.png" class="logo" alt="" ></a>
+            <ul class="links">
+                <li><a href="rentello.html">Domov</a></li>
+                <li><a href="vozidla.html">Naše vozidlá</a></li>
+                <li><a href="kontakty.html">Kontakty</a></li>
+                <li><a href="nas.html">O Nás</a></li>
+            </ul>
+            <a href="citat_dalej.html" class="action_btn">Zistiť viac</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="rentello.html">Domov</a></li>
+            <li><a href="vozidla.html">Naše vozidlá</a></li>
+            <li><a href="kontakty.html">Kontakty</a></li>
+            <li><a href="nas.html">O Nás</a></li>  
+            <li><a href="citat_dalej.html" class="action_btn">Zistiť viac</a></li>
+        </div>
+    </header>
+    <section>
+        <div class="trieda_e"><h1>Ekonomická</h1></div>
+    <div class="cars_row">
+        <div class="car-block">
+            <img src="obrázky/fabiatp.png" alt="Auto 1e">
+            <h3>Škoda Fabia 3 1.0tsi 70kw</h3>
+            <p>cena<br>cena</p>
+            <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+        </div>
+        <div class="car-block">
+            <img src="obrázky/seatl.png" alt="Auto 2e">
+            <h3>Seat Leon 1.6tdi 77kw</h3>
+            <p>cena<br>cena</p>
+            <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>
+      <div class="car-block">
+        <img src="obrázky/skoda-superb-combi.png" alt="Auto 3e">
+        <h3>Skoda Superb 2.0tdi<br>140kw 4x4 DSG</h3>
+        <p>cena<br>cena</p>
+        <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>
+      <div class="car-block">
+        <img src="obrázky/passat.png" alt="Auto 4e">
+        <h3>Passat B8 2.0tdi<br> 140kw 4motion DSG</h3>
+        <p>cena<br>cena</p>
+        <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>
+      <div class="car-block">
+        <img src="obrázky/audi_a4.jpeg" alt="Auto 5e">
+        <h3>Auto 2</h3>
+        <p>Popis auta 2.</p>
+        <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>
+      <div class="car-block">
+        <img src="obrázky/audi_a4.jpeg" alt="Auto 5e">
+        <h3>Auto 2</h3>
+        <p>cena<br>cena</p>
+        <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>
+      
+    
+      <!--<div class="car-block">
+        <img src="auto2.jpg" alt="Auto 2">
+        <h3>Auto 2</h3>
+        <p>Popis auta 2.</p>
+        <a href="rezervacia.html" class="reservation-button">Rezervovať</a>
+      </div>-->
+    </div>
+    </section>
+    <footer>
+        <div class="footercontainer">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/rentello_autopozicovna/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="tel:0915451679"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="vozidla.html">Naše vozidlá</a></li>
+                    <li><a href="kontakty.html">Kontakty</a></li>
+                    <li><a href="nas.html">O Nás</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023, Všetky práva vyhradené pre Rentello.sk; Designed by <span class="designer"> Filip Lovič x Alternate</span></p>
+        </div>
+    </footer>
+        
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nas.css">
+    <script src="https://kit.fontawesome.com/bb8769d3b3.js" crossorigin="anonymous"></script>
+    <title>Rentello.sk/o Nás</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="rentello.html"><img src="obrázky/logo.png" class="logo" alt="" ></a>
+            <ul class="links">
+                <li><a href="rentello.html">Domov</a></li>
+                <li><a href="vozidla.html">Naše vozidlá</a></li>
+                <li><a href="kontakty.html">Kontakty</a></li>
+                <li><a href="nas.html">O Nás</a></li>
+            </ul>
+            <a href="citat_dalej.html" class="action_btn">Zistiť viac</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="rentello.html">Domov</a></li>
+            <li><a href="vozidla.html">Naše vozidlá</a></li>
+            <li><a href="kontakty.html">Kontakty</a></li>
+            <li><a href="nas.html">O Nás</a></li>  
+            <li><a href="citat_dalej.html" class="action_btn">Zistiť viac</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>O Nás</h1>
+                <p><span class="uvitanie">Vitajte v našej spoločnosti!</span>
+                    Sme mladí a dynamickí majitelia firmy, ktorá sa zameriava na požičovanie áut ľuďom, ktorí sa stali účastníkmi škodovej udalosti a ich vozidlá utrpeli poškodenie. Sme tu pre Vás, aby sme vám poskytli rýchle a pohodlné riešenie, vďaka ktorému nebudete závislí od opráv a budete mať stálu mobilnosť.
+                    Chápeme, že byť v situácii, keď je Vaše vozidlo poškodené, môže byť pre Vás stresujúce a obmedzujúce. Preto sme sa rozhodli vytvoriť túto firmu s cieľom uľahčiť Vám život. Naša flotila zahŕňa viacero áut rôznych kategórií a značiek, takže sme schopní prispôsobiť sa Vašim potrebám a preferenciám.
+                    Naša spoločnosť sa neustále rozvíja a zlepšuje, aby sme vám mohli poskytovať ešte lepšie služby.
+                    Veríme, že každý si zaslúži mať prístup k spoľahlivej a cenovo dostupnej preprave, najmä v prípade nešťastnej udalosti. Sme tu pre vás, aby sme vám pomohli prekonať ťažkosti a vrátili vás späť na cestu bez stresu. Tešíme sa na to, že Vás privítame ako súčasť Našej stále rastúcej komunity spokojných zákazníkov.<br><span class="kontakt">Kontaktujte Nás</span> ešte dnes a dozviete sa viac o tom, ako vám môžeme pomôcť!</p>
+                <div class="tlacidla">
+                <a href="citat_dalej.html" class="action_btn">Zistiť viac</a>
+                <a href="vozidla.html" class="vozidla_hlavne"><i class="fa-solid fa-car"></i>Naše vozidlá</a>
+                <a href="kontakty.html" class="kontakt2"><i class="fa-solid fa-phone"></i>Kontaktujte Nás</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/rentello_autopozicovna/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="tel:0915451679"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="vozidla.html">Naše vozidlá</a></li>
+                    <li><a href="kontakty.html">Kontakty</a></li>
+                    <li><a href="nas.html">O Nás</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2023, Všetky práva vyhradené pre Rentello.sk; Designed by <span class="designer"> Filip Lovič x Alternate</span></p>
+        </div>
+    </footer>
+        
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+    
+</body>
+</html>
